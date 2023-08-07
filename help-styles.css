@@ -1,0 +1,31 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:white;
+    text-align:left;
+    color: white;
+    font-weight: bold;
+    background-image: url("images/green\ back.avif");
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+p{
+    white-space: pre-line;
+}
+h1{
+    color: goldenrod;
+}
+button{
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    display:inline;
+    margin: 3px auto;
+}
+#game-discription{
+    display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Discription</title>
+    <link rel="stylesheet" href="help-styles.css">
+
+</head>
+<body>
+        <h1>Game Discription</h1>
+        <h3>Welcome to our exciting game!</h3>
+        <p>
+            Twenty-one, formerly known as vingt-un in Britain, France, and America, is the name given to a family of popular card games of the gambling family, the progenitor of which is recorded in Spain in the early 17th century. The family includes the casino games of blackjack and pontoon as well as their domestic equivalents. Twenty-one rose to prominence in France in the 18th century and spread from there to Germany and Britain from whence it crossed to America. Known initially as vingt-un in all those countries, it developed into pontoon in Britain after the First World War and blackjack in Canada and the United States in the late 19th century, where the legalization of gambling increased its popularity.
+
+    
+            click the button below to learn more about the game.
+        </p>
+        <button id="discription-btn">Show Game Rules</button>
+        <div id="game-discription">
+            <h2>Game Rules</h2>
+            <p>
+                The rules of this game are somewhat similar to the blackjack game.<br>
+                The aim of the "21 card game" is to get the sum of 21 points or the closest number to 21.<br>
+                Number cards have their face value, jacks, kings and queens are worth 10 and Ace is 11.<br>
+                You can have as many cards as you like as long as you don't go over 21.<br>
+                In this game, two players receive two cards randomly from the computer.<br>
+                The game starts with the player1 and he receives two cards, if their total is less than 21,<br>
+                he has the chance to ask for a card by pressing the "NEW CARD" button or close the game by pressing the "ENOUGH CARD" button.<br>
+                The player2 starts the game and if two players finish the game with a total of 20 or less,<br>
+                the "WINNER" button determines the winner of the game and the game starts over with the winner.<br>
+                The game continues until the value of one of the players reaches zero, and the final winner will receive double the initial value of the money.<br>
+                For example, at the beginning of the game, two players receive $120, at the end of the game, the winner wins $240 and the loser loses all of their money.<br>
+                On each hand, 20 points are added to the value of the winner and subtracted from the value of the loser.<br>
+                If the sum of the cards of two participants is equal, no points are added or subtracted and the game starts over from the first player.<br>
+                If the sum of points is 21, the player wins and the game is not given to the opponent.<br>
+                If the sum of points exceeds 21, the opponent's player wins.<br>
+
+            </p>
+        </div>
+        <script>
+            const discriptionBtn = document.getElementById("discription-btn")
+            const gameDiscription = document.getElementById("game-discription")
+
+            discriptionBtn.addEventListener("click" , function showRules(){
+                if(gameDiscription.style.display === "none"){
+                    gameDiscription.style.display = "block"
+                }else{
+                    gameDiscription.style.display = "none"
+                }
+            })
+        </script>
+    
+    
+</body>
+</html>
