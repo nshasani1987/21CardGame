@@ -2,7 +2,6 @@
 const backgroundImage = ["images/happy.webp", "images/sad.webp", "images/happy2.webp"]
 let cards = []
 let sum = 0
-let hasBlackJack = false
 let isAlive = false
 let message = ""
 let chips = getRandomChips()
@@ -43,7 +42,6 @@ help.addEventListener("click" , function howToPlay(){
 
 userSubmitBtn.addEventListener("click" ,  function userSubmitButton(){
     if (playerName.value !== "" && chips > 0) {
-        
         startBtn.disabled = false
         playerChips.textContent= `${playerName.value} : $${chips}`
         user.textContent = playerChips.textContent
